@@ -18,8 +18,8 @@ import AWS from "../assets/Skills/icons8-awslambda-96.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Card = ({ title, img }) => (
-  <div className="shadow-lg rounded-xl p-3 sm:p-4 w-24 sm:w-28 md:w-32 flex-shrink-0 flex flex-col items-center mx-2 bg-[#F2613F] text-[#0C0C0C]">
-    <img src={img} alt={title} className="w-12 sm:w-16 h-12 sm:h-16 mb-2 object-contain" />
+  <div className="shadow-lg rounded-xl p-3 sm:p-4 w-20 sm:w-28 md:w-32 flex-shrink-0 flex flex-col items-center mx-2 bg-[#F2613F] text-[#0C0C0C]">
+    <img src={img} alt={title} className="w-12 sm:w-16 h-12 sm:h-12 mb-2 object-contain" />
     <p className="text-xs sm:text-sm font-medium text-center">{title}</p>
   </div>
 );

@@ -16,7 +16,7 @@ const Home = () => {
             shadow-mapSize-width={1024}
             shadow-mapSize-height={1024}
           />
-          <ModelViewer url="/models/space_station_3.glb" />
+          <ModelViewer url="/space_station_3.glb" />
           
         </Canvas>
         
