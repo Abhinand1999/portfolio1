@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
 
 * {
-    overflow: hidden;
     font-family: 'Besley', sans-serif;
+    box-sizing: border-box;
 }
+
 
 
 /* App.css */

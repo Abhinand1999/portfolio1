@@ -123,12 +123,15 @@ const Project = () => {
       </div>
 
       <div
-        className="w-screen h-screen flex flex-col items-center justify-center text-center"
-        ref={headerRef}
-        style={{ color: '#F2613F' }}
-      >
-        <h1 className="text-[200px] font-bold">PROJECTS</h1>
-      </div>
+  className="w-screen h-screen flex flex-col items-center justify-center text-center"
+  ref={headerRef}
+  style={{ color: '#F2613F' }}
+>
+  <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[150px] 2xl:text-[200px] font-bold leading-none">
+    PROJECTS
+  </h1>
+</div>
+
 
       {cardsData.map((card, idx) => {
         const [firstWord, ...rest] = card.title.split(" ");
