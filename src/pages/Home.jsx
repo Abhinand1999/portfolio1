@@ -2,7 +2,7 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import ModelViewer from '../components/ModelViewer';
-
+const model = "/src/models/space_station_3.glb"; // or use `new URL()` if needed
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
             shadow-mapSize-width={1024}
             shadow-mapSize-height={1024}
           />
-          <ModelViewer url="/space_station_3.glb" />
+          <ModelViewer url={model} />
           
         </Canvas>
         
