@@ -185,7 +185,7 @@ const WaterPage = () => {
     <div
       ref={containerRef}
       className="three-container"
-      style={{ width: "100%", height: "100vh", overflow: "hidden" }}
+      style={{ width: "100%", height: window.innerWidth < 768 ? "60vh" : "100vh", overflow: "hidden" }}
     />
   );
 };

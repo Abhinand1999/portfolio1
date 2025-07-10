@@ -106,9 +106,9 @@ const NavigationBar = () => {
   }, [showStickyNav]);
 
   return (
-    <div className="bg-[#0C0C0C]">
+    <div className="bg-[#0C0C0C] hide-cursor-mobile">
       {/* Primary Navigation */}
-      <nav ref={primaryNavRef} className="px-6 py-4 flex justify-end items-center mr-10">
+      <nav ref={primaryNavRef} className="px-6 py-4 flex justify-end items-center mr-3 md:mr-10">
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((item, index) => (
@@ -128,11 +128,11 @@ const NavigationBar = () => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden ml-4" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button className="md:hidden ml-10" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           <img
             src={mobileMenuOpen ? closeIcon : menuIcon}
             alt="Menu Icon"
-            className="w-6 h-6 filter invert"
+            className="w-10 h-10 filter invert"
           />
         </button>
       </nav>
